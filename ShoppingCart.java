@@ -26,9 +26,9 @@ public class TesteShoppingCart {
   @Test
   public void testAddItem() {
     // Escreva aqui seu código de teste
-    int initialSize = shoppingCart.getItemCount();
+    int numItens = shoppingCart.getItemCount();
     shoppingCart.addItem(new Item("TP", 50.0));
-    assertEquals(initialSize + 1, shoppingCart.getItemCount());
+    assertEquals(numItens + 1, shoppingCart.getItemCount());
   }
 
   @Test
